@@ -1,0 +1,22 @@
+{
+  "name": ".NET Core dev container",
+  
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  
+  "service": "web",
+  
+  "workspaceFolder": "/app",
+  
+  "extensions": [
+    "ms-dotnettools.csharp",
+    "eamodio.gitlens"
+  ],
+  
+  "forwardPorts": [5000],
+  
+  "shutdownAction": "stopCompose",
+
+  "remoteUser": "vscode"
+}
