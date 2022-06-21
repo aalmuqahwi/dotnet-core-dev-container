@@ -4,6 +4,9 @@ services:
   web:
     build: 
       context: .
+      args:
+        - POSH_THEME=jandedobbeleer
+        - TZ=Asia/Bahrain # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
     working_dir: /app
 
